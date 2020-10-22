@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MyCameraController : MonoBehaviour
+public class MainCameraController : MonoBehaviour
 {
     //車のオブジェクト
     private GameObject car;
@@ -21,7 +21,7 @@ public class MyCameraController : MonoBehaviour
     void Update()
     {
         //車の位置に合わせてカメラの位置を移動  2.0fは車からみたカメラの高さ
-        this.transform.position = this.car.transform.position - car.transform.forward * 2.0f + new Vector3(0.0f, 2.0f, 0.0f); 
+        this.transform.position = this.car.transform.position - car.transform.forward * 2.0f + new Vector3(0.0f, 2.0f, 0.0f);
 
         this.transform.rotation = this.car.transform.rotation;
     }
